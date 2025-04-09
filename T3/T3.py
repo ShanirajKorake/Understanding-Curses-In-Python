@@ -4,6 +4,8 @@ import time
 
 def main(stdscr):
     curses.curs_set(0)
+    stdscr.addstr("hello world")
+    stdscr.refresh()
     
     counter_win = curses.newwin(1,20, 10, 10)
     for i in range(10, -1, -1):
